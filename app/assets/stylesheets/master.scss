@@ -1,0 +1,19 @@
+$primary-font:'Ubuntu', sans-serif;
+$secondary-font:'PT Sans', sans-serif;
+
+.navbar-brand {
+ font-family:'PT Sans', sans-serif;
+ font-weight: bold;
+ letter-spacing: 2px;
+ font-size:25px;
+ }
+
+ .navbar-inverse .navbar-brand {
+ color:white;
+ }
+
+.btn {
+font-family: 'Ubuntu', sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
