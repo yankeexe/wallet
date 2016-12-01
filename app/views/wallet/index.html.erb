@@ -1,4 +1,20 @@
-<% @wallet.each do |wallet| %>
-<h3> <%= wallet.description %> </h3>
-<h4> <%=wallet.amount %> </h4>
-<% end %>
+
+  <table class="table">
+ 
+  <tr>
+  <th>Title </th>
+  <th>  Amount</th>
+  </tr>
+
+      <% @wallet.each do |wallet| %>
+  <tr> 
+
+  <td> <%= wallet.description %> </td>
+  <td>	<kbd><%=wallet.amount %> 	</kbd>	</td>
+  <td> <button type="button" class="btn btn-primary">	Edit	</button></td>
+  <td> <button type="button" class="btn btn-danger">	Delete	</button></td>
+<% end %> 
+ </table>
+</div>
+
+

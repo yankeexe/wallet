@@ -48,3 +48,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3.6'
+
+gem 'simple_form'
+
+gem 'simple-form-datepicker'
