@@ -1,0 +1,6 @@
+<h1> Revise Transaction.</h1>
+<%= simple_form_for @money, method: :patch do |f| %>
+<%= f.input :title %>
+<%= f.input :amount %>
+<%= f.submit 'Submit', class: 'btn btn-primary' %>
+<% end %>

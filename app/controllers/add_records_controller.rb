@@ -1,2 +1,0 @@
-class AddRecordsController < ApplicationController
-end

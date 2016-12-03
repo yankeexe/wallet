@@ -11,12 +11,17 @@ $secondary-font:'PT Sans', sans-serif;
 
  .navbar-inverse .navbar-brand {
  color:white;
+ padding-top: 5px;
  }
 
 .btn {
 font-family: 'Ubuntu', sans-serif;
 font-weight: bold;
 font-size: 15px;
+}
+
+.btn-primary{
+  float:right;
 }
 
 /* Styles go here */
@@ -57,7 +62,9 @@ td{
 }
 kbd{
 	color:white;
+}
 
-
-
+.container-fluid{
+padding-top: 15px;
+  
 }

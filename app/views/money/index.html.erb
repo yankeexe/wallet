@@ -1,0 +1,23 @@
+<table>
+<ul style="list-style-type: none">
+<li>  <h1>    Total  </h1> </li>
+<li>  <h1>   Debt   </h1> </li>
+</ul>
+<table class="table">
+ 
+  <tr>
+  <th>Title </th>
+  <th>  Amount</th>
+  </tr>
+
+      <% @money.each do |money| %>
+  <tr> 
+
+  <td> <%= money.title %> </td>
+  <td>	<kbd><%=money.amount %> 	</kbd>	</td>
+  <td> <%= link_to 'Edit', edit_money_path(money), class: 'btn btn-primary' %> </td>
+  <td> <%= link_to 'Delete', money_path(money),  method: :delete, class: 'btn btn-danger', data: {Confirm: "Are you sure?"} %> </td>
+<% end %> 
+ </table>
+</div>
+
