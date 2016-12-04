@@ -1,12 +1,17 @@
 $primary-font:'Ubuntu', sans-serif;
 $secondary-font:'PT Sans', sans-serif;
 
-.navbar-brand {
+.navbar-header {
  font-family:'PT Sans', sans-serif;
  font-weight: bold;
  letter-spacing: 2px;
  font-size:25px;
- padding-top: 20px;
+ padding-top: 5px;
+ }
+
+ .navbar-header a{
+ text-decoration: none;
+ color: white;
  }
 
  .navbar-inverse .navbar-brand {
@@ -65,6 +70,37 @@ kbd{
 }
 
 .container-fluid{
-padding-top: 15px;
+padding-top: 5px;
   
 }
+
+/* Add Money Page */
+
+textarea.form-control {
+width: 500px;
+float: center;
+}
+
+.form-control {
+width: 500px;
+}
+
+.add_button .btn-primary{
+  float: left;
+  margin-left: 725px;
+
+}
+
+.form-group {
+margin-left: 300px;
+}
+
+
+.edit_buttons .btn-primary{
+      margin-right: 340px;
+}
+
+div.text h1{
+  margin-left:400px;
+}
+

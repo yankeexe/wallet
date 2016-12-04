@@ -32,7 +32,7 @@ class MoneyController < ApplicationController
 		redirect_to root_path
 	end 
 
-
+	
 	def money_params
     	params.require(:money).permit(:title, :amount)
   	end
