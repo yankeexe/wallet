@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20161205092409) do
 
-  create_table "money", force: :cascade do |t|
+  create_table "moneys", force: :cascade do |t|
     t.text     "title"
     t.integer  "amount"
     t.datetime "created_at", null: false
