@@ -40,6 +40,7 @@ class MoneyController < ApplicationController
 
 	
 	private
+	
 	def money_params
     	params.require(:money).permit(:title, :amount, :date)
   	end
