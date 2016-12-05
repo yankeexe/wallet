@@ -34,7 +34,7 @@ class MoneyController < ApplicationController
 	def destroy
 		@money= Money.find(params[:id])
 		@money.destroy
-		flash[:success]="Idea Destroyed"
+		flash[:success]="Transaction Destroyed"
 		redirect_to root_path
 	end 
 
