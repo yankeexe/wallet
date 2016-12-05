@@ -1,28 +1,29 @@
 <div class="trans_table">
 <table>
-<ul style="list-style-type: none">
-<li>  <h1>    Total: <%= Money.sum(:amount) %>  </h1> </li>
-<li>  <h1>   Debt:   </h1> </li>
-</ul>
+  <ul style="list-style-type: none">
+    <li><h1>    Balance: <%= @balance %>  </h1> </li>
+    <li><h1>   Debt: <%= @debt %>  </h1> </li>
+    <li><h1> Total: <%= @total %> </h1> </li> 
+  </ul>
 </table>
 </div>
 
-<table class="table">
+<table class="table" id="money-table">
  
   <tr>
-  <th>  Created at </th>
-  <th>  Title     </th>
-  <th>  amount    </th>
+    <th>  Created at </th>
+    <th>  Title     </th>
+    <th>  amount    </th>
   </tr>
 
-      <% @money.each do |money| %>
-  <tr> 
-  <td> <%= money.created_at.strftime("%b/%d/%Y") %> </td>
-  <td> <%= money.title %> </td>
-  <td>	<kbd><%=money.amount %> 	</kbd>	</td>
-  <td> <%= link_to 'Edit', edit_money_path(money), class: 'btn btn-warning' %> </td>
-  <td> <%= link_to 'Delete', money_path(money),  method: :delete, class: 'btn btn-danger', data: {Confirm: "Are you sure?"} %> </td>
-<% end %> 
+  <% @money.each do |money| %>
+    <tr> 
+      <td> <%= money.date.strftime("%b/%d/%Y") %> </td>
+      <td> <%= money.title %> </td>
+      <td>	<kbd><%=money.amount %> 	</kbd>	</td>
+      <td> <%= link_to 'Edit', edit_money_path(money), class: 'btn btn-warning' %> </td>
+      <td> <%= link_to 'Delete', money_path(money),  method: :delete, class: 'btn btn-danger', data: {Confirm: "Are you sure?"} %> </td>
+  <% end %> 
  
  </table>
 </div>

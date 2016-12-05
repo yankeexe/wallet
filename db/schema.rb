@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161201033449) do
+ActiveRecord::Schema.define(version: 20161205070308) do
 
   create_table "money", force: :cascade do |t|
     t.text     "title"
     t.string   "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date     "date"
   end
 
 end
